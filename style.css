@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@200;300;500;600;700&family=Poppins:ital@1&family=Raleway:wght@400;500;600&family=Sofia+Sans+Condensed:ital,wght@1,100;1,200;1,300;1,500&display=swap');
+
+:root {
+    --primary-color: #4e9f0d;
+    --second-color: #000;
+    --font-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Familjen Grotesk', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-image: url('./img/bg-main.jpg');    
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.logo {
+    background: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    display: flex;
+    margin-left: 350px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    margin: -40px 5px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+.navbar ul li a:hover {
+    background: var(--primary-color);
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+h1 + h3 {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    font-size: 25px;
+    margin: 7px 0 15px;
+}
+
+h1 + h3 + p {
+    color: var(--font-color);
+    font-size: 20px;
+    width: 90%;
+}
+
+.header button {
+    margin: 30px 0;
+    border: none;
+}
+
+h1 + h3 + p + button .head-btn {
+    padding: 20px 50px;
+    font-size: 40px;
+    background: var(--primary-color);
+    color: var(--font-color);
+}
+
+
+.main {
+    padding-top: 50px;
+    background: var(--second-color);
+    color: var(--font-color);
+    height: 1000px;
+}
+
+.main ul {
+    display: flex;
+    gap: 25px;
+    margin: 0 0 50px;
+    font-size: 20px;
+}
+
+.main ul li a {
+    color: #ddd;
+    transition: 0.3s;
+}
+
+.main ul li a:hover {
+    color: var(--primary-color);
+}
+
+.main .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.main .card {
+    width: calc(100% / 4);
+}
+
+.main .card img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.main .card .img-burger {
+    position: relative;
+}
+
+.main .card .price {
+    position: absolute;
+    background: var(--primary-color);
+    padding: 15px 30px;
+    left: 0;
+    bottom: 3px;
+    font-size: 20px;
+}
+
+.main .card h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-size: 30px;
+    margin: 0 0 7px;
+}
+
+
+.recipes {
+    background-image: url('https://us.123rf.com/450wm/kbolbik/kbolbik2010/kbolbik201000595/kbolbik201000595.jpg');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: var(--font-color);
+    padding-top: 100px;
+}
+
+.recipes h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-color);
+    margin: -30px 0 30px;
+    position: relative;
+}
+
+.recipes h2::before {
+    content: "";
+    position: absolute;
+    background: var(--primary-color);
+    height: 2px;
+    width: 150px;
+    left: 420px;
+    bottom: -10px;
+}
+
+.recipes p {
+    font-size: 18px;
+}
+
+.footer {
+    background: var(--second-color);
+    color: var(--font-color);
+    height: 250px;
+}
+
+.top {
+    margin-top: 2px;
+    padding-top: 40px;
+    font-size: 24px;
+}
+
+.left {
+    width: auto;
+    position: absolute;
+    left: 10px;
+}
+
+.con-foot {
+    position: relative;
+}
+
+.right {
+    width: 20%;
+    position: absolute;
+    right: 10px;
+}
+
+.middle ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.middle ul li a {
+    color: var(--font-color);
+    margin-top: 85px;
+}
+
+.footer p:last-child {
+    text-align: center;
+    padding: 30px;
+    color: #ddd;
+}
